@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Harry_Pottah_top_page</title>
+</head>
+<style>
+    #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+    body{
+        background-image: url(./imgN/bg.png);
+        margin-bottom: 0;
+    }
+/*------------------------------------------------------*/
+    h1{
+        /*position the image in the center*/
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .image1{
+        width: 40%;
+        height: 40%;/*size of the image*/
+    }
+/*----------------------------------------------------------*/   
+    .line {
+    position: fixed;/*so the lines stay in place to prevent from being resized by the browser window*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.5;
+}
+    .line1{
+        top:240px;
+        transform: translate(-50%,-50%);
+    }
+    .line2{
+        top:300px;
+        transform: translate(-50%,-50%);
+    }
+    .first-list  ul{
+        display: flex;
+        color: white;
+        font-weight: bold;
+        font-size:20px ;
+    }
+    .first-list li{
+        margin-right: 60px;/*to make space between the words*/
+        list-style: none;/*to remove the dots next to ニュースetc8*/
+       
+    }
+    .first-list li:hover{
+        color: yellow;
+
+    }
+    .first-list li a:hover{
+        color: yellow;
+
+    }
+    .first-list li a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav{
+       /*to place in the center of the page*/
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+/*------------------------------------------------------------------*/
+    .image2,.big,.small,.text_box,.mv_pic,.cadre,.imagefooter{
+        justify-content: center;/*if you remove any of them it wont be in the center*/
+        display: flex;
+        align-items: center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+/*---------------------------------------------------------------------*/
+    .big,.small,.text_box,.news{
+        color: white;
+    }
+    .small,.text_box{
+        opacity: 0.8;
+    }
+    .big{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .small{
+        font-size: smaller;   
+    }
+/*-----------------------------------------------------------*/
+    .mv_pic{
+     width: 85%;
+    }
+/*---------------------------------------------------------------*/
+.news {
+    display: flex;
+    justify-content: center;
+}
+
+.news li {
+    list-style: none;
+    margin: 6px;
+}
+
+.news li img {
+    width: 280px;
+    margin: 6px;
+}
+/*--------------------------------------------------------------------------*/
+    .date{
+        font-size: medium;
+        font-weight: bold;
+    }
+    .rest{
+        opacity: 0.8;
+        font-size:12px;
+    }
+    p{
+        font-weight: 400;
+        line-height: 1;
+    }
+/*-------------------------------------------------------------------------*/
+    p.cadre{
+        outline: 5px double white;
+        
+        padding: 15px 0px;
+        width: 300px;
+    }
+    .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    }
+    .cadre:hover .motto  {
+        color: yellow;
+    }
+    .cadre:hover {
+        outline-color: yellow;
+    }
+    .motto{
+        color: white ;
+        font-weight: bold;
+    }
+/*------------------------------------------------------------------*/
+    .imagefooter{
+        width: 90%;
+        opacity: 0.5;
+        height: 50%;
+    }
+    .image_text_container {
+       position: relative;
+       text-align: center;
+       color: white;
+     
+    }
+    .centered {
+       position: absolute;
+       top: 94%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+      
+    }
+
+/*----------------------------------------------------------------------------*/
+</style>
+<div id="wrapper">
+<header>
+     <h1> <img src="./imgN/Logo.png" class="image1" ></h1>
+</header>
+
+<body>
+
+  <div class="line line1"></div>
+     <nav class="first-list">
+         <ul class="first-list">
+             <li>ニュース</li>
+             <li><a href="Harry_Pottah_Work.html">作品紹介</a></li>
+             <li><a href="Chara.html"> キャラクター</a></li>
+             <li>関連グッズ</li>
+         </ul>
+     </nav>
+  <div class="line line2"></div>
+
+  <h2><img src="./imgN/minithing.png" class="image2"></h2>
+
+  <span class="big">ハリー・ポッターとは</span>
+  <span class="small">What's Harry Potter</span>
+<br>
+  <div class="text_box">
+    『ハリー・ポッター』（英: Harry Potter）は、J・K・ローリングの小説『ハリー・ポッター』シリーズを原作と
+    <br>する、英米の映画シリーズ。ワーナー・ブラザース製作。現在8作。シリーズ累計の興行成績は世界歴代3位の77億
+    <br>ドル。「魔法ワールド」に含まれる。
+  </div>
+<br>
+  <div >
+    <img src="./imgN/mv.png"class="mv_pic">
+  </div>
+  <br>
+
+  <h2><img src="./imgN/minithing.png" class="image2"></h2>
+
+  <span class="big">ニュース</span>
+  <span class="small">NEWS</span>
+  <br>
+
+  <ul class="news">
+    <li><img src="./imgN/news03.png" class="imagebag">
+        <p><span class="date">2023.10.26</span><br>
+            <span class="rest">「サーティワン アイスクリーム」にて初の『ハリー・ポッター』キャンペーン開催決定！</span>
+        </p>
+    </li>
+
+    <li><img src="./imgN/news-1.png" class="imagebag">
+        <p><span class="date">2023.10.26</span><br>
+            <span class="rest">ハリーとスネイプ先生モデルのコラボバッグが予約受付中！</span>
+        </p>
+    </li>
+
+    <li><img src="./imgN/news-2.png" class="imagebag">
+        <p><span class="date"> 2023.10.26</span><br>
+           <span class="rest"> キッチン道具の専門店「212キッチンストア」と「ハリー・ポッター」のコラボレーション！</span>
+        </p>
+    </li>
+  </ul>
+
+ 
+     <div class="container">
+       <p class="cadre"> 
+          <span class="motto">もっと見る</span> 
+       </p>
+     </div>
+   
+
+<footer>
+    <div class="image_text_container">
+         <img src="./imgN/footerbg.png" class="imagefooter" >
+         <div class="centered">©2023 The Wizarding World of Harry Potter</div>
+    </div>
+</footer>
+  
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

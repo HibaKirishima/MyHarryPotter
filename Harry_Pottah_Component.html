@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Harry_Pottah_Component</title>
+</head>
+<style>
+    #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+    
+    }
+    body{
+        background-color:rgb(40, 40, 40);
+        
+    }
+/*------------------------------------------------------*/
+    h1{
+        /*position the image in the center*/
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .image1{
+        width: 40%;
+        height: 40%;/*size of the image*/
+    }
+    .image2{
+        width: 20%;
+        width: 20%;
+        margin-left: 125px;
+    }
+    .first-list  ul{
+        display: flex;
+        color: white;
+        font-weight: bold;
+        font-size:12px ;
+    }
+    .first-list li{
+        margin-right: 40px;/*to make space between the words*/
+        list-style: none;/*to remove the dots next to ニュースetc8*/
+    }
+    .first-list li:hover{
+        color: yellow;
+
+    }
+    .first-list li a:hover{
+        color: yellow;
+
+    }
+    .first-list li a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav{
+       /*to place in the center of the page*/
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-left: 140px; /*to put the news etc bar at the right side*/
+    }
+    .order{
+        display: flex;
+    }
+/*----------------------------------------------------------*/ 
+    p.cadre{
+        outline: 5px double white;
+        opacity: 0.8;
+        padding: 10px 0px;
+        width: 210px;
+    }
+    .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    }
+    .cadre:hover .circle  {
+        color: yellow;
+    }
+    .cadre:hover {
+        outline-color: yellow;
+    }
+    .circle{
+        color: white ;
+        font-weight: bold;
+    } 
+    /*----------------------------------------------------------*/ 
+    .imagefooter{
+        width: 90%;
+        opacity: 0.5;
+        height: 50%;
+        margin-bottom: -15px;
+    }
+    .image_text_container {
+       position: relative;
+       text-align: center;
+       color: white;
+       
+    }
+    .centered {
+       position: absolute;
+       top: 96%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+
+    }
+
+</style>
+<div id="wrapper">
+<header>
+    <h1> <img src="./imgN/Logo.png" class="image1" ></h1>
+    <div class="order">
+        <img src="./imgN/Logo-2.png" class="image2">
+        <nav class="first-list">
+            <ul class="first-list">
+                <li>ニュース</li>
+                <li><a href="Harry_Pottah_Work.html">作品紹介</a></li>
+                <li><a href="Chara.html"> キャラクター</a></li>
+                <li>関連グッズ</li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+
+
+<body>
+
+
+    <div class="container">
+        <p class="cadre"> 
+           <span class="circle">(≧∀≦)ゞ</span> 
+        </p>
+      </div>
+
+      <footer>
+        <div class="image_text_container">
+             <img src="./imgN/footerbg.png" class="imagefooter" >
+             <div class="centered">©2023 The Wizarding World of Harry Potter</div>
+        </div>
+    </footer>
+
+
+
+
+</div>
+</body>
+
+</html>

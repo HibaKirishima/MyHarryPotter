@@ -1,0 +1,81 @@
+@charset "utf-8"; 
+
+/*----------------------------------------------------------*/ 
+.image2{
+    width: 20%;
+    margin-left: 125px;
+}
+.first-list  ul{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size:12px ;
+    margin-right: -30px;
+}
+.first-list li{
+    margin-right: 30px;/*to make space between the words*/
+    list-style: none;/*to remove the dots next to ニュースetc8*/
+    margin-top: -80px;
+   
+   
+}
+.first-list{
+  display: flex;
+
+}
+.first-list li:hover{
+    color: yellow;
+
+}
+.first-list li a:hover{
+    color: yellow;
+
+}
+.first-list li a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+   /*to place in the center of the page*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 140px; /*to put the news etc bar at the right side*/
+
+}
+.order{
+ 
+    margin-top: 30px;
+}
+/*------------------------------------------------------*/
+.line {
+    position: fixed;/*so the lines stay in place to prevent from being resized by the browser window*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 720px;
+    height: 2px;
+    background-color: white;
+    opacity: 0.5;
+    margin-left: 9px;
+}
+.line1{
+    top:140px;
+    transform: translate(-50%,-50%);
+}
+.line2{
+    top:190px;
+    transform: translate(-50%,-50%);
+}
+.chara{
+    display: flex;
+    color: white;
+    font-weight:800;
+    font-size:25px ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: -12px;
+    margin-right: 20px;
+    
+}
